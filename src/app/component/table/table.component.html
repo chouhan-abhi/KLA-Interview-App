@@ -1,0 +1,33 @@
+<div class="input-box">
+  <input />
+  <select>
+    <option *ngFor="let filter of filterTypes" [value]="filter"> {{filter}} </option>
+  </select>
+  <button>Add</button>
+</div>
+
+<div class="table">
+  <table>
+    <tr>
+      <th>Item</th>
+      <th>Staus</th>
+      <th>Action</th>
+    </tr>
+    <tr *ngFor="let data of model">
+      <td>
+        {{data.item}}
+      </td>
+      <td>
+        {{data.status}}
+      </td>
+      <td>
+        <div>
+          <button>Edit</button>
+          <button>Delete</button>
+          <button>Add Child</button>
+        </div>
+      </td>>
+    </tr>
+  </table>
+
+</div>
